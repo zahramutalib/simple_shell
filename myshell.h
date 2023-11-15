@@ -5,6 +5,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 
 void zara_print(const char *writeup);
 void view_my_prompt(void);

@@ -1,4 +1,4 @@
-#include "myshell"
+#include "myshell.h"
 
 /**
  * main - the entry point
@@ -8,10 +8,11 @@
 
 int main(void)
 {
-	char command[10]
 
 		while (1)
 		{
+			char command[10];
+
 			view_my_prompt();
 			read_input(command, sizeof(command));
 			exec_prompt(command);
