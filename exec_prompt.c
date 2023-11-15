@@ -15,8 +15,10 @@ void exec_prompt(const char *command)
 	}
 
 	else if (child_pid == 0)
-	{
-		char *args[] = {(char *)command, NULL};
+	 {
+		 char *args[2];
+		 args[0] = (char *)command;
+		 args[1] = NULL;
 
 		execve(command, args, (char *const *)NULL);
 		perror("execve");
