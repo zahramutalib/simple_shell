@@ -12,7 +12,7 @@ int main(void)
 		while (1)
 		{
 			char command[10];
-
+		
 			view_my_prompt();
 			read_input(command, sizeof(command));
 			exec_prompt(command);
