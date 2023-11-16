@@ -11,6 +11,6 @@
 void zara_print(const char *writeup);
 void view_my_prompt(void);
 void exec_prompt(const char *command);
-void read_input(char *command, size_t size);
+void read_input(char **command, size_t *size);
 
 #endif /*MYSHELL_H*/

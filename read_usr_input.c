@@ -20,5 +20,6 @@ void read_input(char **command, size_t *size)
 			exit(EXIT_FAILURE);
 		}
 	}
-	command[strcspn(command, "\n")] = '\0';
+
+	(*command[strcspn(*command, "\n")] = '\0');
 }
