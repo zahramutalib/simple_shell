@@ -5,9 +5,9 @@
  * @command:morre like a pointer
  * @size:tells me the memory size of an input
  */
-void read_input(char *command, size_t size)
+void read_input(char **command, size_t *size)
 {
-	if (getline(command, size, stdin) == NULL)
+	if (getline(command, size, stdin) == -1)
 	{
 		if (feof(stdin))
 		{
